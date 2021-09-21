@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import { $text } from '@styles/colors';
+import { disableHighlight } from '@styles/mixins';
 
 const GlobalStyles = createGlobalStyle`
   html, body {
@@ -10,6 +12,10 @@ const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'Andes Reg', sans-serif;
+    color: ${$text};
+    background: #f6f9fc;
+    ${disableHighlight}
   }
 
   a {
