@@ -1,5 +1,11 @@
 import repeat from 'lodash/repeat';
 
+export const tikTokTextEffect = `
+  font-size: 64px;
+  text-shadow: -4px -2px 0px cyan, 4px 2px 0px red;
+  color: #fff;
+`;
+
 export const disableHighlight = `
   -webkit-user-select: none;
   -moz-user-select: none;

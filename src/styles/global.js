@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { $text } from '@styles/colors';
+import { $text, $darkBg } from '@styles/colors';
 import { disableHighlight } from '@styles/mixins';
 
 const GlobalStyles = createGlobalStyle`
@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-family: 'Andes Reg', sans-serif;
     color: ${$text};
-    background: #f6f9fc;
+    background: ${$darkBg};
     ${disableHighlight}
   }
 

@@ -7,3 +7,7 @@ export const $primary = $pink;
 export const $primaryDark = '#00a600';
 export const $secondary = '#ffd848';
 export const $text = '#0a2540';
+
+// DARK MODE:
+export const $darkBg = '#1c1d23';
+export const $darkHighlight = '#272a31';
