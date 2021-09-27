@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { $text, $darkBg } from '@styles/colors';
+import { $text, $darkBg, $white } from '@styles/colors';
 import { disableHighlight } from '@styles/mixins';
 
 const GlobalStyles = createGlobalStyle`
@@ -12,9 +12,9 @@ const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: 'Andes Reg', sans-serif;
-    color: ${$text};
-    background: ${$darkBg};
+    font-family: 'Inter Reg';
+    color: ${$white};
+    background: #151618;
     ${disableHighlight}
   }
 
@@ -24,8 +24,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @font-face {
-    font-family: '';
-    src: url('');
+    font-family: 'Inter Reg';
+    src: url('/typefaces/inter/inter-reg.woff2');
+  }
+
+  @font-face {
+    font-family: 'Inter Med';
+    src: url('/typefaces/inter/inter-med.woff2');
   }
 `;
 

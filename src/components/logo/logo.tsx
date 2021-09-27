@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { $gold } from '@styles/colors';
+import { $gold, $white } from '@styles/colors';
 import { alpha } from '@styles/mixins';
 
 const LogoShell = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid ${alpha('#fff', 4)};
+  border-right: 1px solid ${alpha($white, 4)};
   padding: 0px 16px 0px 19px;
 `;
 

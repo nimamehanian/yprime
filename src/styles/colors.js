@@ -11,3 +11,4 @@ export const $text = '#0a2540';
 // DARK MODE:
 export const $darkBg = '#1c1d23';
 export const $darkHighlight = '#272a31';
+export const $darkBorder = '#2d2d3d';
