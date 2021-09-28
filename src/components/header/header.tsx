@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { $pink, $darkBorder } from '@styles/colors';
-import Logo from '@components/logo/logo';
-import WalletSVG from '@components/svg/walletSVG';
+import YieldlyLogo from '@components/svg/yieldlyLogo';
+import WalletSvg from '@components/svg/walletSvg';
 import Button from '@components/button/button';
 
 const HeaderShell = styled.div`
@@ -22,14 +22,14 @@ function Header() {
   return (
     <HeaderShell>
       <div>
-        <Logo />
+        <YieldlyLogo />
       </div>
 
       <div>
         <Button
           color={$pink}
           label="Connect wallet"
-          icon={<WalletSVG />}
+          icon={<WalletSvg />}
         />
       </div>
     </HeaderShell>

@@ -1,4 +1,4 @@
-function WalletSVG() {
+function WalletSvg() {
   return (
     <svg viewBox="0 0 36 35" width="24">
       <path
@@ -30,4 +30,4 @@ function WalletSVG() {
   );
 }
 
-export default WalletSVG;
+export default WalletSvg;

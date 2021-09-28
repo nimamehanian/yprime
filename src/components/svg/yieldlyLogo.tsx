@@ -10,7 +10,7 @@ const LogoShell = styled.div`
   padding: 0px 16px 0px 19px;
 `;
 
-function Logo() {
+function YieldlyLogo() {
   return (
     <LogoShell>
       <svg
@@ -45,4 +45,4 @@ function Logo() {
   );
 }
 
-export default Logo;
+export default YieldlyLogo;
