@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Head from 'next/head';
-import Header from '@components/header/header';
+// import Header from '@components/header/header';
+import Hamburger from '@components/hamburger/hamburger';
 
 // import styled from 'styled-components';
 // import { tikTokTextEffect } from '@styles/mixins';
@@ -20,7 +21,7 @@ const Home: FC = () => (
       <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     </Head>
 
-    <Header />
+    <Hamburger isOpen={false} />
   </div>
 );
 

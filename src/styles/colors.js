@@ -1,4 +1,5 @@
 export const $white = '#ffffff';
+export const $cream = '#f5f7f9';
 
 // PLACEHOLDERS — TBD:
 export const $pink = '#f76f8e';
