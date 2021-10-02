@@ -8,7 +8,7 @@
         "pure": true,
         "displayName": true,
         "preprocess": false,
-        "namespace": "emoji"
+        "namespace": "yieldly"
       }
     ]
   ]
