@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { $pink } from '@styles/colors';
 import { motion } from 'framer-motion';
-import { jsxKeyGen } from '@utils/jsxKeyGen';
+import { $ANIMATION_PHYSICS } from '@styles/constants';
 
 const Toggler = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0px;
   width: 126px;
@@ -43,20 +43,20 @@ const bar3 = {
   open: { rotate: -45, y: -10 },
 };
 
-const physics = { type: 'spring', mass: 1, stiffness: 360, damping: 36 };
-
-interface IHam { isOpen: boolean; }
+type IHam = {
+  isOpen: boolean,
+};
 
 function Hamburger({ isOpen }: IHam) {
   return (
     <Toggler>
       <Bars>
-        {[bar1, bar2, bar3].map(states => (
+        {[bar1, bar2, bar3].map((states, idx) => (
           <Bar
             animate={isOpen ? 'open' : 'shut'}
-            transition={physics}
+            transition={$ANIMATION_PHYSICS}
             variants={states}
-            key={jsxKeyGen('bar')}
+            key={`bar_${idx + 1}`}
           />
         ))}
       </Bars>
