@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import { $pink } from '@styles/colors';
 import { motion } from 'framer-motion';
 import { $ANIMATION_PHYSICS } from '@styles/constants';
 
 const Toggler = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
   width: 126px;
@@ -14,7 +13,6 @@ const Toggler = styled.div`
   justify-content: center;
   cursor: pointer;
   z-index: 4;
-  background: ${$pink};
 `;
 
 const Bars = styled.div`

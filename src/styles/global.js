@@ -11,7 +11,6 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Inter Reg';
     color: ${$white};
     background: #151618;
-    overflow: hidden;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

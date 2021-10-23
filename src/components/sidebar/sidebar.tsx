@@ -13,7 +13,6 @@ const SidebarPanel = styled(motion.div)`
   width: 61.8%;
   max-width: 314px;
   padding-top: 126px;
-  background: #45816f;
   z-index: 3;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
@@ -22,9 +21,9 @@ const SidebarPanel = styled(motion.div)`
 `;
 
 const variants = {
-  shut: { x: '97%' },
-  peek: { x: '94%' },
-  open: { x: '0%' },
+  shut: { x: '97%', backgroundColor: '#45816f' },
+  peek: { x: '94%', backgroundColor: '#45816f' },
+  open: { x: '0%', backgroundColor: '#5daf96' },
 };
 
 const initialState = {
@@ -75,6 +74,7 @@ function Sidebar() {
         <Hamburger isOpen={isOpen} />
       </div>
       <SidebarPanel
+        initial='shut'
         animate={isOpen ? 'open' : (isPeeking ? 'peek' : 'shut')}
         transition={$ANIMATION_PHYSICS}
         variants={variants}
